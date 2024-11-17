@@ -11,8 +11,10 @@ import com.example.entity.User;
  */
 public class ExampleData {
     /**
-     * 从数据库获取json数据
-     * @return
+     * 从数据库获取json数据 TODO 可以利用现成的json工具，如fastjson、jackson等，下载对应jar包，然后引入依赖，查看官方文档使用教程
+     * @param name 用户名
+     * @param age 年龄
+     * @return json数据
      */
     public String getJsonData(String name,Integer age) {
         //TODO 从数据库获取数据
