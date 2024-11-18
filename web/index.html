@@ -11,7 +11,9 @@
 <script>
     var button = document.getElementById('example');
     button.onclick = function(){
-      fetch('http://localhost:8080/example',{
+      //Get请求一般会在url后加上?然后附带参数，参数之间用&分割，后端可以从url解析到数据
+      //Post请求一般是在Body里带上json数据，后端可以从body解析到数据
+      fetch('http://localhost:8080/example?id=1',{
         method:'GET'
       }).then(res=>res.json())
               .then(data=>{

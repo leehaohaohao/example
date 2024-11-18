@@ -20,6 +20,7 @@ public class ExampleData {
         //TODO 从数据库获取数据
         User user = new User(name,age);
         String result = "";
+        //强烈建议使用json不要按照我下面
         if(user.getName()!=null && user.getAge() != null){
             result = "{\"name\":\""+user.getName()+"\",\"age\":"+user.getAge()+"}";
         }else if(user.getName()!=null){
